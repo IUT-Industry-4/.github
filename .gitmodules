@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/IUT-Industry-4/backend
+[submodule "devops"]
+	path = devops
+	url = https://github.com/IUT-Industry-4/devops
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/IUT-Industry-4/frontend
