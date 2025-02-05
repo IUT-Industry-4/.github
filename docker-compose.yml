@@ -12,10 +12,7 @@ services:
     build:
       context: ./
       dockerfile: ./devops/docker/python/Dockerfile
-    volumes:
-      - ./backend:/app
     environment:
-      - DJANGO_SETTINGS_MODULE=backend.settings
       - DATABASE_URL=postgresql://user:password@db:5432/mydatabase
     depends_on:
       db:
