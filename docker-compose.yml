@@ -7,6 +7,8 @@ services:
       - "80:80"
     depends_on:
       - backend
+    volumes:
+      - static_volume:/usr/share/nginx/html/static
 
   backend:
     build:
@@ -18,6 +20,8 @@ services:
       db:
         condition: service_healthy
     restart: unless-stopped
+    volumes:
+      - static_volume:/app/static
 
   db:
     image: postgres:latest
@@ -36,3 +40,4 @@ services:
 
 volumes:
   postgres_data:
+  static_volume:
