@@ -5,10 +5,13 @@ services:
       dockerfile: ./devops/docker/nginx/Dockerfile
     ports:
       - "80:80"
+      - "443:443"
     depends_on:
       - backend
     volumes:
       - static_volume:/usr/share/nginx/html/static
+      - ./devops/docker/nginx/certs:/etc/nginx/certs
+
 
   backend:
     build:
