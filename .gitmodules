@@ -7,3 +7,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/IUT-Industry-4/frontend
+[submodule "frontend-admin"]
+	path = frontend-admin
+	url = https://github.com/IUT-Industry-4/frontend-admin-panel.git
