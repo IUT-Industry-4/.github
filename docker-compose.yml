@@ -10,7 +10,7 @@ services:
       - backend
     volumes:
       - static_volume:/usr/share/nginx/html/static
-      - ./devops/docker/nginx/certs:/etc/nginx/certs
+      - ./devops/docker/nginx/certs:/etc/nginx/ssl/live:rw
 
 
   backend:
